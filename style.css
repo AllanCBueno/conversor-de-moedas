@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+
+body {
+    background: url(./assets/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    filter: invert(1);
+}
+
+
+main {
+    width: 80vw;
+    border-radius: 20px;
+    background: rgb(244, 244, 244, 0.96);
+    margin: 0 auto;
+    padding: 44px 24px 23px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    color: #777777;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+select,
+input {
+    background-color: #FFFFFF;
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    height: 48px;
+    width: 30vw;
+    margin-bottom: 24px;
+    appearance: none;
+    padding-left: 18px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #555555;
+    cursor: pointer;
+}
+
+input {
+    cursor: default;
+}
+
+.convert-button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: black;
+    border: none;
+    height: 48px;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.convert-button:hover {
+    opacity: 0.8;
+}
+
+.convert-button:active {
+    opacity: 0.6;
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    margin-left: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35vw;
+
+
+}
+
+.arrow-img {
+    margin: 15px;
+
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+section img {
+    width: 44px;
+    height: 44px;
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value-to-convert,
+.currency-value-converted {
+    color: #555555;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+
+main {
+    flex-direction: column;
+}
+
+.dados {
+    width: 100%;
+}
+
+select,
+input {
+    width: 100%;
+}
+
+section {
+    width: 60%;
+    margin: 10px 0;
+}
+
+.convert-button {
+    margin: 0;
+    padding: 10px 40px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+}
+
+}
